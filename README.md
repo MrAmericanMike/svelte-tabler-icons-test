@@ -1,49 +1,33 @@
-# Svelte-Kit
+# Svelte-Tabler-Icons-Test
 
-### Usage:
+### The problem
 
-In the folder we want to install the template
+After adding `@tabler/icons-svelte` to the project, each page that uses an icon becomes terrible slow to refresh
 
-`npx degit MrAmericanMike/svelte-template#kit`
+### Clone
 
-`npm install`
+Clone this repo:
 
-`npm run dev`
-
----
-
-Installed on VSCode:
-
-- https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-- https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode
-
-### VSCODE Workspace Settings
-
-```json
-{
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"eslint.validate": ["javascript", "css"],
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true
-		},
-		"editor.formatOnSave": true,
-		"[svelte]": {
-			"editor.defaultFormatter": "svelte.svelte-vscode"
-		}
-	}
-}
+```sh
+git clone https://github.com/MrAmericanMike/svelte-tabler-icons-test.git
 ```
 
-## Why this repo is even a thing?
+Install Dependencies
 
-- It presets most of the linting options I like
-- It provides a base to work with Svelte under different scenarios
+```sh
+cd svelte-tabler-icons-test
+pnpm i
+```
+
+### DEV
+
+Start the dev server
+
+```sh
+pnpm dev
+```
+
+Now when we visit `http://localhost:3000/` It should load and refresh fast.
+If we go to the About page, it loads fast, however when we refresh this page, it gets stuck for a while.
 
 ---
-
-## Any feedback is welcome, just create an [issue](https://github.com/MrAmericanMike/svelte-template/issues)
