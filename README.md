@@ -28,6 +28,6 @@ pnpm dev
 ```
 
 Now when we visit `http://localhost:3000/` It should load and refresh fast.
-If we go to the About page, it loads fast, however when we refresh this page, it gets stuck for a while.
+If we go to the About page (takes forever the first time ever) but then it loads fast, however when we refresh this page, it gets stuck for a while.
 
 ---
